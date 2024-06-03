@@ -1,32 +1,101 @@
-
-
-.img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    background-color: #cac3c3;
-}
-.round-image {
+.Heading-Name{
+    font-size: 30px; /* Make the text larger */
+    font-weight: bold; /* Make the text bold */
+    color: #cecece; /* Change the text color to white */
+  }
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+  .image-container img[class="img-fluid"] {
+    width: 100%;
+    height: auto;
+    opacity: 0.17; /* Set the opacity of the image */
+  }
+  .overlay-item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+  }
+ .round-image {
     width: 200px; /* Adjust the size as needed */
     height: 200px; /* Adjust the size as needed */
     border-radius: 50%;
     object-fit: cover; /* Ensures the image covers the entire area */
+    border: 5px solid white;
 }
-.portfolio-video {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    object-fit: contain; /* Ensure the video maintains its aspect ratio */
-}
-
-.portfolio-item {
-    text-align: center;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .portfolio-item {
-        margin-bottom: 2rem;
+.img {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 40vh; /* Full viewport height */
+      text-align: center;
     }
+.Profile-name{
+    
+    font-size: 65px;
+    font-family: cambria;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+.intro{
+    font-family: cambria;
+    font-size: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+.download{
+    height: 10vh;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+p{
+  color: white;
+}
+
+
+.education {
+  background:  #212529;
+  padding-top:  50px;
+}
+.education-horizontal-timeline {
+  padding: 80px 0;
+}
+
+/*.education-horizontal-timeline*/
+.education-horizontal-timeline .col-sm-4 {padding:0 2px;}
+
+.single-horizontal-timeline .experience-time h3{text-transform: capitalize;}
+.single-horizontal-timeline .experience-time h3 span{text-transform:lowercase;}
+.single-horizontal-timeline .timeline-content h5 {margin: 15px 0;}
+.single-horizontal-timeline p {color: #ffffff;max-width: 335px;}
+
+/*.timeline-horizontal-border*/
+.timeline-horizontal-border {
+  display:  flex;
+  align-items: center;
+  padding: 26px 0 30px;
+}
+
+span.single-timeline-horizontal {
+  display:  inline-block;
+  background: #ffffff;
+  height:  1px;
+  width: 380px;
+}
+span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
+a,a:hover,a:active,a:focus {
+	display:inline-block;
+	text-decoration:none;
+	color: #ffffff;
+	font-size:16px;
+	padding:0;
 }
