@@ -1,101 +1,182 @@
-.Heading-Name{
-    font-size: 30px; /* Make the text larger */
-    font-weight: bold; /* Make the text bold */
-    color: #cecece; /* Change the text color to white */
-  }
-  .image-container {
-    position: relative;
-    width: 100%;
-  }
-  .image-container img[class="img-fluid"] {
-    width: 100%;
-    height: auto;
-    opacity: 0.17; /* Set the opacity of the image */
-  }
-  .overlay-item{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
-  }
- .round-image {
-    width: 200px; /* Adjust the size as needed */
-    height: 200px; /* Adjust the size as needed */
-    border-radius: 50%;
-    object-fit: cover; /* Ensures the image covers the entire area */
-    border: 5px solid white;
+/* styles.css */
+
+/* Heading Name */
+.Heading-Name {
+  font-size: 30px; /* Make the text larger */
+  font-weight: bold; /* Make the text bold */
+  color: #cecece; /* Change the text color to white */
+  text-align: center; /* Center the heading */
 }
+
+/* Image Container */
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.transparent-img {
+  width: 100%;
+  height: auto;
+  opacity: 0.17; /* Set the opacity of the image */
+}
+
+/* Overlay Item */
+.overlay-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  text-align: center; /* Center the text inside the overlay */
+}
+
+/* Round Image */
+.round-image {
+  width: 200px; /* Adjust the size as needed */
+  height: 200px; /* Adjust the size as needed */
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image covers the entire area */
+  border: 5px solid white;
+}
+
+/* Img Container */
 .img {
-      position: relative;
-      width: 100%;
-      display: flex;
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
-      height: 40vh; /* Full viewport height */
-      text-align: center;
-    }
-.Profile-name{
-    
-    font-size: 65px;
-    font-family: cambria;
-    font-weight: bold;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 40vh; /* Full viewport height */
+  text-align: center;
 }
-.intro{
-    font-family: cambria;
-    font-size: 20px;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
+
+/* Profile Name */
+.Profile-name {
+  font-size: 65px;
+  font-family: cambria;
+  font-weight: bold;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  text-align: center; /* Center the text */
+  color: white; /* Ensure text color is white */
 }
-.download{
-    height: 10vh;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
+
+/* Intro Text */
+.intro {
+  font-family: cambria;
+  font-size: 20px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  text-align: center; /* Center the text */
+  padding: 0 15px; /* Add some padding for better readability */
 }
-p{
+
+/* Download Button */
+.download {
+  height: 10vh;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+}
+
+/* Paragraphs */
+p {
   color: white;
 }
 
-
+/* Education Section */
 .education {
-  background:  #212529;
-  padding-top:  50px;
+  background: #212529;
+  padding-top: 50px;
 }
+
+/* Education Horizontal Timeline */
 .education-horizontal-timeline {
   padding: 80px 0;
 }
 
-/*.education-horizontal-timeline*/
-.education-horizontal-timeline .col-sm-4 {padding:0 2px;}
+.education-horizontal-timeline .col-sm-4 {
+  padding: 0 2px;
+}
 
-.single-horizontal-timeline .experience-time h3{text-transform: capitalize;}
-.single-horizontal-timeline .experience-time h3 span{text-transform:lowercase;}
-.single-horizontal-timeline .timeline-content h5 {margin: 15px 0;}
-.single-horizontal-timeline p {color: #ffffff;max-width: 335px;}
+/* Single Horizontal Timeline */
+.single-horizontal-timeline .experience-time h3 {
+  text-transform: capitalize;
+}
 
-/*.timeline-horizontal-border*/
+.single-horizontal-timeline .experience-time h3 span {
+  text-transform: lowercase;
+}
+
+.single-horizontal-timeline .timeline-content h5 {
+  margin: 15px 0;
+}
+
+.single-horizontal-timeline p {
+  color: #ffffff;
+  max-width: 335px;
+}
+
+/* Timeline Horizontal Border */
 .timeline-horizontal-border {
-  display:  flex;
+  display: flex;
   align-items: center;
   padding: 26px 0 30px;
 }
 
 span.single-timeline-horizontal {
-  display:  inline-block;
+  display: inline-block;
   background: #ffffff;
-  height:  1px;
+  height: 1px;
   width: 380px;
 }
-span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
-a,a:hover,a:active,a:focus {
-	display:inline-block;
-	text-decoration:none;
-	color: #ffffff;
-	font-size:16px;
-	padding:0;
+
+span.single-timeline-horizontal.spacial-horizontal-line {
+  width: 88px;
+}
+
+/* Anchor Styles */
+a, a:hover, a:active, a:focus {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust font sizes for smaller screens */
+  .Heading-Name {
+    font-size: 24px;
+  }
+
+  .Profile-name {
+    font-size: 40px;
+  }
+
+  .intro {
+    font-size: 16px;
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .round-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Adjust the padding and margins for sections */
+  .education, .education-horizontal-timeline {
+    padding: 40px 0;
+  }
+
+  .single-horizontal-timeline p {
+    max-width: 100%;
+  }
+
+  span.single-timeline-horizontal {
+    width: 100%;
+  }
 }
