@@ -57,12 +57,6 @@ p {
     padding: 40px 0;
   }
 
-  /* Ensure images resize for smaller screens */
-  .round-image {
-    width: 150px;
-    height: 150px;
-  }
-
   /* Ensure paragraphs maintain readability */
   p {
     font-size: 14px;
